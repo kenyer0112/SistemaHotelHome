@@ -9,13 +9,13 @@ namespace Domain
     public class Reserva
     {
 
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
         public DateTime Fecha { get; set; }
 
-        public int IdCliente { get; set; }
+        public Cliente Cliente { get; set; }
 
-        public int IdRoom {get; set;}
+        public Room Room {get; set;}
 
         public double TotalSubtotal {  get; set; }
      
@@ -27,6 +27,8 @@ namespace Domain
 
         public DateTime FechaLLegada { get; set; }
         public DateTime FechaSalida { get; set; }
+
+        public List<DetalleReserva> detalleReservas { get; set; }
 
 
     }

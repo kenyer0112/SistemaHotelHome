@@ -8,15 +8,15 @@ namespace Domain
 {
   public class DetalleReserva
     {
-        public int Id { get; set; }
-        public int IdReserva { get; set; }
+        public int Guid { get; set; }
+        public Reserva Reserva { get; set; }
         public double Precio { get; set; }
-        public int IdRoom { get; set; }
+        public Room Room { get; set; }
  
         public int CantidadNoche { get; set; }
         public double Descuento { get; set; }
 
-
+        
 
 
         public double SubTotal
